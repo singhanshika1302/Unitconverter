@@ -47,6 +47,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                image: DecorationImage(image: AssetImage('assets/weight.jpg')),
                                 color: Color(0xFF667391),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -60,7 +61,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/weight.jpg'),
+                             // child: Image.asset('assets/weight.jpg'),
                             ),
                             Text('Weight' ,
                           style: TextStyle(
@@ -88,6 +89,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                image: DecorationImage(image: AssetImage('assets/volume.jpg')),
                                 color: Color(0xFF667391),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -101,7 +103,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/volume.jpg'),
+                              //child: Image.asset('assets/volume.jpg'),
                             ),
                             Text('Volume' ,
                           style: TextStyle(
@@ -130,6 +132,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                image: DecorationImage(image: AssetImage('assets/temp.jpg')),
                                 color: Color(0xFF667391),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -143,7 +146,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/temp.jpg'),
+                             // child: Image.asset('assets/temp.jpg'),
                             ),
                             Text('Temperature' ,
                           style: TextStyle(
@@ -179,6 +182,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                image: DecorationImage(image: AssetImage('assets/length.jpg')),
                                 color: Color(0xFF667391),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -192,7 +196,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/length.jpg'),
+                             // child: Image.asset('assets/length.jpg'),
                             ),
                             Text('Length' ,
                           style: TextStyle(
@@ -221,6 +225,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                 image: DecorationImage(image: AssetImage('assets/speed.jpg')),
                                 color: Color(0xFF667391),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -234,7 +239,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/speed.jpg'),
+                              //child: Image.asset('assets/speed.jpg'),
                             ),
                             Text('Speed' ,
                           style: TextStyle(
@@ -261,6 +266,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                 image: DecorationImage(image: AssetImage('assets/area.jpg')),
                                 color: Color(0xFF667391),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -274,7 +280,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/area.jpg'),
+                              //child: Image.asset('assets/area.jpg'),
                             ),
                             Text('Area' ,
                           style: TextStyle(
@@ -313,6 +319,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                image: DecorationImage(image: AssetImage('assets/time.jpg')),
                                 color: Color(0xFF667391),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -326,7 +333,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/time.jpg'),
+                              //child: Image.asset('assets/time.jpg'),
                             ),
                             Text('Time' ,
                           style: TextStyle(
@@ -355,6 +362,7 @@ class home_page extends StatelessWidget {
                               width: 80.63,
                               height: 80.63,
                               decoration: ShapeDecoration(
+                                image: DecorationImage(image: AssetImage('assets/pressure.jpg')),
                                 color: Color.fromARGB(255, 233, 233, 235),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(11.99),
@@ -368,7 +376,7 @@ class home_page extends StatelessWidget {
                                   )
                                 ],
                               ),
-                              child: Image.asset('assets/pressure.jpg'),
+                             // child: Image.asset('assets/pressure.jpg'),
                             ),
                             Text('Pressure' ,
                           style: TextStyle(
@@ -394,6 +402,7 @@ class home_page extends StatelessWidget {
                             width: 80.63,
                             height: 80.63,
                             decoration: ShapeDecoration(
+                              image: DecorationImage(image: AssetImage('assets/storage.jpg')),
                               color: Color(0xFF667391),
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(11.99),
@@ -407,7 +416,7 @@ class home_page extends StatelessWidget {
                                 )
                               ],
                             ),
-                            child: Image.asset('assets/storage.jpg'),
+                            //child: Image.asset('assets/storage.jpg'),
                           ),
                           Text('Storage' ,
                         style: TextStyle(
