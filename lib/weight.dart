@@ -65,7 +65,18 @@ class _weightState extends State<weight> {
             SizedBox(
               height: 20,
             ),
-            Text(_result),
+            Container(
+              width: 300,
+              height: 50,
+              decoration: BoxDecoration(border: Border.all(color: Colors.grey,)),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Result : ' ,style: TextStyle(color: Colors.grey), ),
+                  Text(_result,style: TextStyle(color: Colors.white),),
+                ],
+              ),
+            ),
             TextButton(
               onPressed: () {
                 setState(() {
