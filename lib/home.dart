@@ -14,392 +14,415 @@ class home_page extends StatelessWidget {
           // backgroundColor: Colors.black12,
           elevation: 0.0,
         ),
-        body: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.all(24.0),
-              child: Text(
-                'Select a unit',
-                style: TextStyle(
-                  color: Color(0xFFD5FAFD),
-                  fontSize: 22,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w400,
-                  height: 0,
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Padding(
+                padding: const EdgeInsets.all(24.0),
+                child: Text(
+                  'Select a unit',
+                  style: TextStyle(
+                    color: Color(0xFFD5FAFD),
+                    fontSize: 22,
+                    fontFamily: 'Inter',
+                    fontWeight: FontWeight.w400,
+                    height: 0,
+                  ),
                 ),
               ),
-            ),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.pushNamed(context, '/weight');
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/weight');
+                        
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFF667391),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/weight.jpg'),
                             ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                            Text('Weight' ,
+                          style: TextStyle(
+                            color: Colors.white
                           ),
-                          child: Image.asset('assets/weight.jpg'),
+                                    
+                            ),
+                          ],
                         ),
-                        Text('Weight' ,
-                      style: TextStyle(
-                        color: Colors.white
                       ),
-                                
-                        ),
-                      ],
                     ),
                   ),
-                ),
-
-
-                 Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
+        
+        
+                   Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                         Navigator.pushNamed(context, '/volume');
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFF667391),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/volume.jpg'),
                             ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                            Text('Volume' ,
+                          style: TextStyle(
+                            color: Colors.white
                           ),
-                          child: Image.asset('assets/volume.jpg'),
+                                    
+                            ),
+                          ],
                         ),
-                        Text('Volume' ,
-                      style: TextStyle(
-                        color: Colors.white
                       ),
-                                
-                        ),
-                      ],
                     ),
                   ),
-                ),
-
-                 Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
+        
+                   Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+        
+                         Navigator.pushNamed(context, '/temp');
+                        
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFF667391),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/temp.jpg'),
                             ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                            Text('Temperature' ,
+                          style: TextStyle(
+                            color: Colors.white
                           ),
-                          child: Image.asset('assets/temp.jpg'),
+                                    
+                            ),
+                          ],
                         ),
-                        Text('Temperature' ,
-                      style: TextStyle(
-                        color: Colors.white
                       ),
-                                
+                    ),
+                  )
+                ],
+              ),
+              SizedBox(
+                height: 15,
+              ),
+        
+        
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                          Navigator.pushNamed(context, '/length');
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFF667391),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/length.jpg'),
+                            ),
+                            Text('Length' ,
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
+                                    
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                )
-              ],
-            ),
-            SizedBox(
-              height: 15,
-            ),
-
-
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
+        
+        
+                   Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/speed');
+                        
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFF667391),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/speed.jpg'),
                             ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                            Text('Speed' ,
+                          style: TextStyle(
+                            color: Colors.white
                           ),
-                          child: Image.asset('assets/length.jpg'),
+                                    
+                            ),
+                          ],
                         ),
-                        Text('Length' ,
-                      style: TextStyle(
-                        color: Colors.white
                       ),
-                                
-                        ),
-                      ],
                     ),
                   ),
-                ),
-
-
-                 Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
+        
+                   Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/area');
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFF667391),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/area.jpg'),
                             ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                            Text('Area' ,
+                          style: TextStyle(
+                            color: Colors.white
                           ),
-                          child: Image.asset('assets/speed.jpg'),
+                                    
+                            ),
+                          ],
                         ),
-                        Text('Speed' ,
-                      style: TextStyle(
-                        color: Colors.white
                       ),
-                                
+                    ),
+                  )
+                ],
+              ),
+        
+        
+               SizedBox(
+                height: 15,
+              ),
+        
+        
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pushNamed(context, '/time');
+                        
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color(0xFF667391),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/time.jpg'),
+                            ),
+                            Text('Time' ,
+                          style: TextStyle(
+                            color: Colors.white
+                          ),
+                                    
+                            ),
+                          ],
                         ),
-                      ],
+                      ),
                     ),
                   ),
-                ),
-
-                 Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
+        
+        
+                   Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                         Navigator.pushNamed(context, '/pressure');
+                        
+                      },
+                      child: Container(
+                        child: Column(
+                          children: [
+                            Container(
+                              width: 80.63,
+                              height: 80.63,
+                              decoration: ShapeDecoration(
+                                color: Color.fromARGB(255, 233, 233, 235),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(11.99),
+                                ),
+                                shadows: [
+                                  BoxShadow(
+                                    color: Color(0x59000000),
+                                    blurRadius: 7,
+                                    offset: Offset(0, 4),
+                                    spreadRadius: 0,
+                                  )
+                                ],
+                              ),
+                              child: Image.asset('assets/pressure.jpg'),
                             ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                            Text('Pressure' ,
+                          style: TextStyle(
+                            color: Colors.white
                           ),
-                          child: Image.asset('assets/area.jpg'),
+                                    
+                            ),
+                          ],
                         ),
-                        Text('Area' ,
-                      style: TextStyle(
-                        color: Colors.white
                       ),
-                                
-                        ),
-                      ],
                     ),
                   ),
-                )
-              ],
-            ),
-
-
-             SizedBox(
-              height: 15,
-            ),
-
-
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: [
-                Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
+        
+                   Padding(
+                    padding: const EdgeInsets.all(12.0),
+                    child: GestureDetector(
+                      onTap: () {
+                        
+                      },
+                      child: Column(
+                        children: [
+                          Container(
+                            width: 80.63,
+                            height: 80.63,
+                            decoration: ShapeDecoration(
+                              color: Color(0xFF667391),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(11.99),
+                              ),
+                              shadows: [
+                                BoxShadow(
+                                  color: Color(0x59000000),
+                                  blurRadius: 7,
+                                  offset: Offset(0, 4),
+                                  spreadRadius: 0,
+                                )
+                              ],
                             ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                            child: Image.asset('assets/storage.jpg'),
                           ),
-                          child: Image.asset('assets/time.jpg'),
+                          Text('Storage' ,
+                        style: TextStyle(
+                          color: Colors.white
                         ),
-                        Text('Time' ,
-                      style: TextStyle(
-                        color: Colors.white
-                      ),
-                                
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-
-
-                 Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color.fromARGB(255, 233, 233, 235),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
-                            ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
+                                  
                           ),
-                          child: Image.asset('assets/pressure.jpg'),
-                        ),
-                        Text('Pressure' ,
-                      style: TextStyle(
-                        color: Colors.white
+                        ],
                       ),
-                                
-                        ),
-                      ],
                     ),
-                  ),
-                ),
-
-                 Padding(
-                  padding: const EdgeInsets.all(12.0),
-                  child: GestureDetector(
-                    onTap: () {
-                      
-                    },
-                    child: Column(
-                      children: [
-                        Container(
-                          width: 80.63,
-                          height: 80.63,
-                          decoration: ShapeDecoration(
-                            color: Color(0xFF667391),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(11.99),
-                            ),
-                            shadows: [
-                              BoxShadow(
-                                color: Color(0x59000000),
-                                blurRadius: 7,
-                                offset: Offset(0, 4),
-                                spreadRadius: 0,
-                              )
-                            ],
-                          ),
-                          child: Image.asset('assets/storage.jpg'),
-                        ),
-                        Text('Storage' ,
-                      style: TextStyle(
-                        color: Colors.white
-                      ),
-                                
-                        ),
-                      ],
-                    ),
-                  ),
-                )
-              ],
-            ),
-          ],
+                  )
+                ],
+              ),
+            ],
+          ),
         ));
   }
 }

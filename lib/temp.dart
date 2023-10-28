@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class weight extends StatefulWidget {
-  const weight({super.key});
+class temp extends StatefulWidget {
+  const temp({super.key});
 
   @override
-  State<weight> createState() => _weightState();
+  State<temp> createState() => _tempState();
 }
 
-class _weightState extends State<weight> {
+class _tempState extends State<temp> {
   final _unitController = TextEditingController();
   var _result = '';
   @override
@@ -16,7 +16,7 @@ class _weightState extends State<weight> {
       backgroundColor: Color(0xff33414E),
       appBar: AppBar(
         backgroundColor: Color.fromARGB(255, 35, 43, 52),
-        title: const Text('Weight'),
+        title: const Text('Temperature'),
         centerTitle: true,
         // backgroundColor: Colors.black12,
         elevation: 0.0,
@@ -27,7 +27,7 @@ class _weightState extends State<weight> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text(
-                'convert from pound to kilogram',
+                'Convert from Fahrenheit to Celsius',
                 style: TextStyle(
                   fontSize: 15,
                   color: Colors.white,
@@ -38,7 +38,7 @@ class _weightState extends State<weight> {
               padding: const EdgeInsets.all(30.0),
               child: TextField(
                 decoration:InputDecoration(
-                  labelText: 'Unit in pound',
+                  labelText: 'Unit in fahrenheit',
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(15)
                   )
@@ -52,7 +52,7 @@ class _weightState extends State<weight> {
               child: ElevatedButton(
                 onPressed: () {
                   setState(() {
-                    _result = '${int.parse(_unitController.text) * 0.453592}';
+                    _result = '${(int.parse(_unitController.text) -32)*5/9}';
                   });
                 },
                 child: Text('Convert'),
@@ -74,7 +74,7 @@ class _weightState extends State<weight> {
                 children: [
                   Text('Result : ' ,style: TextStyle(color: Colors.grey), ),
                   Text(_result,style: TextStyle(color: Colors.white),),
-                   Text(' kgs', style: TextStyle(color: Colors.grey),),
+                  Text('  °C', style: TextStyle(color: Colors.grey),),
                 ],
               ),
             ),
